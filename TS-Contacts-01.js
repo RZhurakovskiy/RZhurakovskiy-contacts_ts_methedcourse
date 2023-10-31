@@ -1,5 +1,6 @@
+"use strict";
 {
-    var persons = [
+    const persons = [
         {
             name: 'Иван Петров',
             age: 27,
@@ -21,8 +22,8 @@
             group: 'Дочь',
         }
     ];
-    var logPerson = function (user) {
-        console.log("".concat(user.name, ", ").concat(user.age));
+    const logPerson = (user) => {
+        console.log(`${user.name}, ${user.age}`);
     };
     console.log('Users:');
     persons.forEach(logPerson);
